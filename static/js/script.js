@@ -275,14 +275,14 @@ var bolehjalan = false;
     if (!bolehjalan) {
       var el = e.currentTarget;
       el.cursor = "pointer";
-      scaleIt(el, 0.3, 0.3, 0.6, Power4.easeOut); // Ajustez ici
+      scaleIt(el, 0.2, 0.2, 0.6, Power4.easeOut); // Ajustez ici
     }
   });
 
   imageCtr.on("mouseout", function (e) {
     if (!bolehjalan) {
       var el = e.currentTarget;
-      TweenMax.to(el, 0.3, {scaleX: 0.3, scaleY: 0.3, ease: Power4.easeOut});
+      TweenMax.to(el, 0.3, {scaleX: 0.1, scaleY: 0.1, ease: Power4.easeOut});
     }
   });
 
