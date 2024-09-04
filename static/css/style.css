@@ -2,12 +2,29 @@
 body {
   font-size: 16px;
   font-family: "Poppins";
-  background-color: black !important;
+  background-image: url('/static/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* Ajoute le flou */
+  z-index: -1; /* Place l'image en arrière-plan */
 }
 
 #canvas {
   display: block;
-  background: linear-gradient(to left, black, black);
 }
 
 .title {

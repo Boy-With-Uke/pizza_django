@@ -70,13 +70,13 @@ var ripples = [],
 function drawRipples(posX, posY, radius, pantek) {
   var ripple = new createjs.Shape();
 
-  ripple.graphics.beginStroke("#eee");
+  ripple.graphics.beginStroke("white");
   ripple.graphics.setStrokeStyle(3);
   ripple.graphics.drawCircle(0, 0, 80 * radius);
 
   var shadowRipple = new createjs.Shape();
 
-  shadowRipple.graphics.beginFill("#c0392b");
+  shadowRipple.graphics.beginFill("white");
   shadowRipple.graphics.drawCircle(0, 0, 80 * radius);
   shadowRipple.alpha = 0;
 
@@ -103,7 +103,7 @@ for (i = 0; i < ripplesLength; i++) {
 // circle init
 var circle = new createjs.Shape();
 circle.width = 100;
-circle.graphics.beginFill("#2c3e50");
+circle.graphics.beginFill("white");
 circle.graphics.drawCircle(0, 0, circle.width);
 
 // shadow circle init
@@ -136,14 +136,14 @@ var imagesArray = [],
     var bitmap = new createjs.Bitmap(image);
   
     // Set the scale to match the desired width and height
-    bitmap.scaleX = 90 / bitmap.getBounds().width;
-    bitmap.scaleY = 90 / bitmap.getBounds().height;
+    bitmap.scaleX = 120 / bitmap.getBounds().width;
+    bitmap.scaleY = 120 / bitmap.getBounds().height;
   
     var bitmapCtr = new createjs.Container().addChild(bitmap);
   
     var bitmapProps = {
-      width: 90, // New width
-      height: 90, // New height
+      width: 120, // New width
+      height: 120, // New height
       rotation: -10,
       oriX: posX,
       oriY: posY,
