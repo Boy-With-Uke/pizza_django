@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Mario Mini Game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+</head>
+  <body class='bg-slate-600' >
+    {% block content %} {% endblock content %}
+    <script src="https://cdn.jsdelivr.net/easeljs.collision-detection/1.0.0/ndgmr.collision.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://codepen.io/pasaribu/pen/NNGbJo/c58fffe58d661ae3d4b168a43eb3b2b8.js"></script>
+    <script src="{% static "/js/script.js" %}"></script>
+  </body>
+</html>
