@@ -259,7 +259,7 @@ var bolehjalan = false;
     stage.setChildIndex(el, stage.getNumChildren() - 1);
 
     if (!hit) {
-      scaleIt(el, 0.8, 0.8, 0.6, Power4.easeOut);
+      scaleIt(el, 0.2, 0.2, 0.6, Power4.easeOut);
 
       TweenMax.to(el, 0.15, {
         x: e.stageX,
