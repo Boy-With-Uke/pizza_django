@@ -362,8 +362,8 @@ function inOrOut(el) {
 
       .to(el, 0.45, {
         delay: 0.6,
-        scaleX: 0.3,
-        scaleY: 0.3,
+        scaleX: 0.1,
+        scaleY: 0.1,
         alpha: 1,
         ease: Power4.easeOut,
         onUpdate: function () {
@@ -403,8 +403,8 @@ function inOrOut(el) {
     tl2
       .to([circleCtr, shadowCircleCtr], 1, {
         delay: 0.6,
-        scaleX: 0.3,
-        scaleY: 0.3,
+        scaleX: 1.1,
+        scaleY: 1.1,
         ease: Elastic.easeOut.config(2.5, 0.4),
       })
       .staggerTo(
@@ -464,12 +464,15 @@ function inOrOut(el) {
         0.05,
         0.5
       )
+      //taille de l'image rehefa success
       .to(
         imagesArray[2],
         0.6,
         {
-          scaleX: 1.1,
-          scaleY: 1.1,
+          x: 854,
+          y: 413,
+          scaleX: 0.2,
+          scaleY: 0.2,
           alpha: 1,
           ease: Elastic.easeOut.config(1, 0.75),
         },

@@ -2,11 +2,12 @@
 body {
   font-size: 16px;
   font-family: "Poppins";
+  background-color: black !important;
 }
 
 #canvas {
   display: block;
-  background: linear-gradient(to left, #f6f9fc, #fcfcfc);
+  background: linear-gradient(to left, black, black);
 }
 
 .title {
